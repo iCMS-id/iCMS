@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use ICMS\Http\Requests;
 use Config;
 
-class HomeController extends Controller {
-	public function index($lang = 2)
+class AdminController extends Controller {
+	public function index()
 	{
-		return Config::get('app.locale');
+		return view('admin.index');
 	}
 }

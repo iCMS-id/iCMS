@@ -25,7 +25,6 @@ class RouteServiceProvider extends ServiceProvider
     public function boot(Router $router)
     {
         //
-
         parent::boot($router);
     }
 
@@ -53,7 +52,7 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapWebRoutes(Router $router)
     {
         $router->group([
-            'namespace' => $this->namespace, 'middleware' => 'web',
+            'namespace' => $this->namespace, 'middleware' => 'web', 'prefix' => '{lang?}'
         ], function ($router) {
             require app_path('Http/routes.php');
         });

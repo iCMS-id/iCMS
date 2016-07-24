@@ -18,10 +18,16 @@ class ICMSServiceProvider extends ServiceProvider {
 		$this->app->register(RouteServiceProvider::class);
 
 		$this->registerPath();
+		$this->registerAssetPath();
 	}
 
 	public function registerPath()
 	{
 		View::addLocation(app_path() . '/Resources/Views');
+	}
+
+	public function registerAssetPath()
+	{
+		return 0;
 	}
 }
