@@ -1,5 +1,5 @@
 @extends('layouts.base')
 
 @section('content')
-sasas
+sasas <h2>FKASOF</h2>
 @endsection

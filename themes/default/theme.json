@@ -1,0 +1,24 @@
+{
+	"name": "Default Theme",
+	"slug": "default",
+	"description": "this is default theme while first installed",
+	"author": [
+		{
+			"name": "nothing628",
+			"email": "yogyphang@gmail.com"
+		}
+	],
+	"publish": {
+		"assets/css": "css",
+		"assets/img": "img",
+		"assets/js" : "js",
+		"assets/fonts": "fonts"
+	},
+	"import-css": [
+		"css/bootstrap.min.css"
+	],
+	"import-js": [
+		"js/jquery-2.2.4.js",
+		"js/bootstrap.min.js"
+	]
+}

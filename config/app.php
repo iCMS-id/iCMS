@@ -204,6 +204,8 @@ return [
 		'Validator' => Illuminate\Support\Facades\Validator::class,
 		'View' => Illuminate\Support\Facades\View::class,
 
+		'Theme' => ICMS\Facades\ThemeFacade::class,
+
 		'Image' => Intervention\Image\Facades\Image::class,
 		'PDF' => Barryvdh\DomPDF\Facade::class,
 		'Identicon'  => Irazasyed\LaravelIdenticon\Facade::class,

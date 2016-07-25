@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>@yield('title','Welcome to iCMS')</title>
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/i.css') }}">
+	
+	{!! Theme::importsTheme() !!}
 </head>
 <body>
 	@yield('content')

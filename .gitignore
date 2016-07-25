@@ -1,6 +1,10 @@
 /vendor
 /node_modules
 /public/storage
+/public/js
+/public/fonts
+/themes/semantic
+/icms
 Homestead.yaml
 Homestead.json
 .env
