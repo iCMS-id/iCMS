@@ -3,6 +3,8 @@
 /public/storage
 /public/js
 /public/fonts
+/public/css
+/public/img
 /themes/semantic
 /icms
 Homestead.yaml
