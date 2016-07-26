@@ -25,7 +25,8 @@
             "database"
         ],
         "psr-4": {
-            "ICMS\\": "icms/src/icms/"
+            "ICMS\\": "icms/src/icms/",
+            "Package\\": "package/"
         }
     },
     "autoload-dev": {

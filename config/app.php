@@ -205,6 +205,8 @@ return [
 		'View' => Illuminate\Support\Facades\View::class,
 
 		'Theme' => ICMS\Facades\ThemeFacade::class,
+		'Package' => ICMS\Facades\PackageFacade::class,
+		'Widget' => ICMS\Facades\WidgetFacade::class,
 
 		'Image' => Intervention\Image\Facades\Image::class,
 		'PDF' => Barryvdh\DomPDF\Facade::class,
