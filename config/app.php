@@ -205,6 +205,7 @@ return [
 		'View' => Illuminate\Support\Facades\View::class,
 
 		'Theme' => ICMS\Facades\ThemeFacade::class,
+		'Menu' => ICMS\Facades\MenuFacade::class,
 		'Package' => ICMS\Facades\PackageFacade::class,
 		'Widget' => ICMS\Facades\WidgetFacade::class,
 

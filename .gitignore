@@ -1,6 +1,8 @@
 /vendor
 /node_modules
 /package
+/public/vendor/*
+!/public/vendor/.gitkeep
 /public/storage
 /public/js
 /public/fonts
