@@ -1,0 +1,15 @@
+.modal-header, .modal-footer {
+	background-color: #2A3F54;
+}
+
+.modal-header .modal-title {
+	color: #e7e7e7;
+}
+
+.modal-header button {
+	color: #e7e7e7;
+}
+
+.modal {
+	z-index: 9999;
+}
