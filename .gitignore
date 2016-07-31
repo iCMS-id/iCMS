@@ -1,6 +1,6 @@
 /vendor
 /node_modules
-/package
+/package/*
 !/package/.gitkeep
 !/package/package.json
 /public/vendor/*
