@@ -1,6 +1,8 @@
 /vendor
 /node_modules
 /package
+!/package/.gitkeep
+!/package/package.json
 /public/vendor/*
 !/public/vendor/.gitkeep
 /public/storage
