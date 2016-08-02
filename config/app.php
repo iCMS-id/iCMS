@@ -156,7 +156,6 @@ return [
 		Radic\BladeExtensions\BladeExtensionsServiceProvider::class,
 		Barryvdh\DomPDF\ServiceProvider::class,
 		Irazasyed\LaravelIdenticon\ServiceProvider::class,
-		Milon\Barcode\BarcodeServiceProvider::class,
 
 	],
 
@@ -213,8 +212,6 @@ return [
 		'PDF' => Barryvdh\DomPDF\Facade::class,
 		'Identicon'  => Irazasyed\LaravelIdenticon\Facade::class,
 		'Uuid' => Webpatser\Uuid\Uuid::class,
-		'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
-		'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
 	],
 
 ];
