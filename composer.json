@@ -11,7 +11,9 @@
         "intervention/imagecache": "^2.3",
         "radic/blade-extensions": "^6.2",
         "barryvdh/laravel-dompdf": "^0.6.1",
-        "irazasyed/laravel-identicon": "^1.1"
+        "irazasyed/laravel-identicon": "^1.1",
+        "webpatser/laravel-uuid": "2.*",
+        "milon/barcode": "^5.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

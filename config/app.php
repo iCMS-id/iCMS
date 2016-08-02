@@ -156,7 +156,7 @@ return [
 		Radic\BladeExtensions\BladeExtensionsServiceProvider::class,
 		Barryvdh\DomPDF\ServiceProvider::class,
 		Irazasyed\LaravelIdenticon\ServiceProvider::class,
-		//Creativeorange\Gravatar\GravatarServiceProvider::class,
+		Milon\Barcode\BarcodeServiceProvider::class,
 
 	],
 
@@ -212,7 +212,9 @@ return [
 		'Image' => Intervention\Image\Facades\Image::class,
 		'PDF' => Barryvdh\DomPDF\Facade::class,
 		'Identicon'  => Irazasyed\LaravelIdenticon\Facade::class,
-		//'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
+		'Uuid' => Webpatser\Uuid\Uuid::class,
+		'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
+		'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
 	],
 
 ];

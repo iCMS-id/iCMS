@@ -12,6 +12,8 @@
 /public/img
 /themes/semantic
 /icms
+/storage/upload/*
+!/storage/upload/.gitkeep
 Homestead.yaml
 Homestead.json
 .env
