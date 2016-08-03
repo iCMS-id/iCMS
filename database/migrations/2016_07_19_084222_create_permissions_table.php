@@ -19,9 +19,9 @@ class CreatePermissionsTable extends Migration
 			$table->string('description')->nullable();
 		});
 
-		Schema::create('user_role', function (Blueprint $table) {
-			$table->integer('user_id')->unsigned();
+		Schema::create('role_user', function (Blueprint $table) {
 			$table->integer('role_id')->unsigned();
+			$table->integer('user_id')->unsigned();
 		});
 	}
 
@@ -32,7 +32,7 @@ class CreatePermissionsTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists('user_role');
+		Schema::dropIfExists('role_user');
 		Schema::dropIfExists('permissions');
 	}
 }
