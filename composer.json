@@ -29,7 +29,10 @@
         "psr-4": {
             "ICMS\\": "icms/src/icms/",
             "Package\\": "package/"
-        }
+        },
+        "files": [
+            "icms/src/icms/helper.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [

@@ -5,32 +5,34 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreatePermissionsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('permissions', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('permission');
-        });
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		Schema::create('permissions', function (Blueprint $table) {
+			$table->increments('id');
+			$table->integer('role_id')->unsigned();
+			$table->string('permission');
+			$table->string('description')->nullable();
+		});
 
-        Schema::create('permission_role', function (Blueprint $table) {
-            $table->integer('role_id')->unsigned();
-            $table->integer('permission_id')->unsigned();
-        });
-    }
+		Schema::create('user_role', function (Blueprint $table) {
+			$table->integer('user_id')->unsigned();
+			$table->integer('role_id')->unsigned();
+		});
+	}
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('permission_role');
-        Schema::dropIfExists('permissions');
-    }
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::dropIfExists('user_role');
+		Schema::dropIfExists('permissions');
+	}
 }

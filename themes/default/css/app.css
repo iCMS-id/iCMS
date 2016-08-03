@@ -17,3 +17,41 @@
 .modal-footer button, .modal-footer .btn {
 	margin-bottom: 0px;
 }
+
+@media (min-width:768px) {
+	.container.menu, .container.page {
+		width:750px
+	}
+}
+@media (min-width:992px) {
+	.container.menu, .container.page {
+		width:970px
+	}
+}
+@media (min-width:1200px) {
+	.container.menu, .container.page {
+		width:1170px
+	}
+}
+
+.container.page {
+	background-color: #FFF;
+	box-shadow: 0px 0px 8px #999;
+	padding: 15px;
+}
+
+.container.page h3 {
+	border-bottom: 2px solid #E6E9ED;
+	padding: 0px 0px 8px;
+}
+
+.container.menu .navbar-header {
+	background-color: transparent;
+}
+.container.menu .navbar-header a.navbar-brand {
+	color:#515356 !important;
+}
+
+.webpage {
+	background: #F7F7F7;
+}
