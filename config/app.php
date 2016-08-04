@@ -203,6 +203,7 @@ return [
 		'Validator' => Illuminate\Support\Facades\Validator::class,
 		'View' => Illuminate\Support\Facades\View::class,
 
+		'Users' => ICMS\Facades\UserFacade::class,
 		'Theme' => ICMS\Facades\ThemeFacade::class,
 		'Menu' => ICMS\Facades\MenuFacade::class,
 		'Package' => ICMS\Facades\PackageFacade::class,
