@@ -13,7 +13,8 @@
         "barryvdh/laravel-dompdf": "^0.6.1",
         "irazasyed/laravel-identicon": "^1.1",
         "webpatser/laravel-uuid": "2.*",
-        "endroid/qrcode": "^1.7"
+        "endroid/qrcode": "^1.7",
+        "baum/baum": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

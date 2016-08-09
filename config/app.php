@@ -156,6 +156,7 @@ return [
 		Radic\BladeExtensions\BladeExtensionsServiceProvider::class,
 		Barryvdh\DomPDF\ServiceProvider::class,
 		Irazasyed\LaravelIdenticon\ServiceProvider::class,
+		Baum\Providers\BaumServiceProvider::class,
 
 	],
 
