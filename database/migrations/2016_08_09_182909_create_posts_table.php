@@ -42,8 +42,10 @@ class CreatePostsTable extends Migration
 
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->unsigned();
-            $table->string('comment');
+            $table->integer('user_id')->unsigned()->nullable();
+            $table->string('name', 50)->nullable();
+            $table->string('email', 50)->nullable();
+            $table->text('comment');
             $table->boolean('is_publish')->default(true);
             $table->timestamps();
         });

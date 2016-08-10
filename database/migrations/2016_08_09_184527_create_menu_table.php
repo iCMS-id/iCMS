@@ -18,6 +18,14 @@ class CreateMenuTable extends Migration
             $table->string('slug');
             $table->json('action')->nullable();
         });
+
+        Schema::create('notifys', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->boolean('is_read')->default(false);
+            $table->json('meta')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -27,6 +35,7 @@ class CreateMenuTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('notifys');
         Schema::dropIfExists('menus');
     }
 }
