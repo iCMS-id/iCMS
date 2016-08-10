@@ -12,7 +12,7 @@ class CreateMediaTable extends Migration
      */
     public function up()
     {
-        Schema::make('medias', function (Blueprint $table) {
+        Schema::create('medias', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('type', 20);

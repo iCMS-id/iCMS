@@ -12,6 +12,21 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
+        Schema::create('events', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('lang_id')->unsigned();
+            $table->string('title');
+            $table->string('slug');
+            $table->text('content')->nullable();
+            $table->boolean('is_publish')->default(false);
+            $table->boolean('is_pinned')->default(false);
+            $table->json('meta')->nullable();
+            $table->timestamp('start_at');
+            $table->timestamp('end_at');
+            $table->timestamps();
+        });
+
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
@@ -21,6 +36,7 @@ class CreatePostsTable extends Migration
             $table->text('content')->nullable();
             $table->boolean('is_publish')->default(false);
             $table->boolean('is_pinned')->default(false);
+            $table->json('meta')->nullable();
             $table->timestamps();
         });
 
@@ -49,5 +65,6 @@ class CreatePostsTable extends Migration
         Schema::dropIfExists('commentables');
         Schema::dropIfExists('comments');
         Schema::dropIfExists('posts');
+        Schema::dropIfExists('events');
     }
 }
