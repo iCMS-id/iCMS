@@ -14,9 +14,12 @@ class CreateMenuTable extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('parent_id')->unsigned();
+            $table->integer('left')->unsigned();
+            $table->integer('right')->unsigned();
+            $table->integer('depth')->unsigned();
             $table->string('name');
-            $table->string('slug');
-            $table->json('action')->nullable();
+            $table->json('action')->nullable();     //['type' => 'apps|url|external', 'route' => 'example.route', 'url' => 'http://', 'package' => 'vendor/package', 'target' => 'self|blank']
         });
 
         Schema::create('notifys', function (Blueprint $table) {
