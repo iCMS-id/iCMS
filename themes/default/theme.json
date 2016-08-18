@@ -17,8 +17,7 @@
 	"import-css": [
 		"css/bootstrap.min.css",
 		"css/font-awesome.min.css",
-		"css/green.css",
-		"css/custom.min.css"
+		"css/green.css"
 	],
 	"import-js": [
 		"js/jquery-2.2.4.min.js",
