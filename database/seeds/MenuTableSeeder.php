@@ -38,6 +38,12 @@ class MenuTableSeeder extends Seeder
         	]],
         ];
 
+        $menu_web = [
+            ['name' => 'Home', 'options' => ['type' => 'url', 'target' => 'self', 'route' => 'app.home']],
+            ['name' => 'Contact Us', 'options' => ['type' => 'url', 'target' => 'self', 'route' => 'app.about']],
+        ];
+
         $admin->makeTree($menu_admin);
+        $web->makeTree($menu_web);
     }
 }
