@@ -11,9 +11,11 @@
 /public/css
 /public/img
 /themes/semantic
+/resources/assets/js
 /icms
 /storage/upload/*
 !/storage/upload/.gitkeep
 Homestead.yaml
 Homestead.json
 .env
+
