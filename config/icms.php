@@ -6,9 +6,16 @@ return [
 		'web'	=> 'layouts.base.web',
 	],
 	'package_path' => 'package',
-	'menu_container' => [
-		'container' => 'layouts.menu.container',
-		'parent'	=> 'layouts.menu.parent',
-		'child'		=> 'layouts.menu.child',
-	]
+	'menu' => [
+		'admin' => [
+			'container' => 'layouts.menu.admin.container',
+			'parent'	=> 'layouts.menu.admin.parent',
+			'child'		=> 'layouts.menu.admin.child',
+		],
+		'web' => [
+			'container' => 'layouts.menu.web.container',
+			'parent'	=> 'layouts.menu.web.parent',
+			'child'		=> 'layouts.menu.web.child',
+		],
+	],
 ];
